@@ -1,7 +1,7 @@
 # Investopedia API Wrapper
  Manage your Investopedia account with this api wrapper.
 
-You need to install ==selenium== to run this.
+You need to install ```selenium``` to run this.
 
 My finance class is having a stock trading competition on investopedia so I decided to make a bot trade for me.
 
