@@ -4,7 +4,6 @@
 You need to install ```selenium``` to run this.
 
 My finance class is having a stock trading competition on investopedia so I decided to make a bot trade for me.
-
 I will be constantly updating and maintaining this for the next couple of months.
 
 # Example Code
