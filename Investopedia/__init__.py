@@ -12,7 +12,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 from enum import Enum
 
-wait_time = 20
+wait_time = 5
 
 # DRIVER
 options = Options() 
@@ -92,7 +92,7 @@ class Account:
         else:
             print("Page already loaded")
 
-        time.sleep(1) # Wait for page to be loaded
+        time.sleep(0.25) # Wait for page to be loaded
 
     def get_account_overview(self):
         """
@@ -257,3 +257,11 @@ class Account:
             print(f"Successfully traded {quantity} {symbol} stocks")
         except:
             pass
+
+    def sell_all_owned(self):
+        """
+            Sells all of your stocks
+        """
+        
+        for stock in self.get_stocks():
+            self.trade(stock.symbol, Action.sell, stock.quantity)
