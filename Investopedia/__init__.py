@@ -92,7 +92,7 @@ class Account:
         else:
             print("Page already loaded")
 
-        time.sleep(0.25) # Wait for page to be loaded
+        time.sleep(1) # Wait for page to be loaded
 
     def get_account_overview(self):
         """
